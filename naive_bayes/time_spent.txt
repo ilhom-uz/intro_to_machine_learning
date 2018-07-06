@@ -1,0 +1,7 @@
+no. of Chris training emails: 7936
+no. of Sara training emails: 7884
+('start time: ', 1530853957.119)
+('spent time: ', 1.207)
+('start time (prediction): ', 1530853958.326)
+('spent time: ', 0.154)
+('accuracy: ', 0.9732650739476678)
