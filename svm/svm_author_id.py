@@ -26,6 +26,8 @@ features_train, features_test, labels_train, labels_test = preprocess()
 # labels_train = labels_train[:len(labels_train)/100]
 
 
+
+
 #########################################################
 ### your code goes here ###
 svc = SVC(kernel='rbf', C=10000)
@@ -39,13 +41,18 @@ print('Start Prediciting test data...')
 
 start = time()
 pred = svc.predict(features_test)
-print('time spent prediction: ',round(time()-start, 3))
+# print('time spent prediction: ',round(time()-start, 3))
+#
+# print('Check accuracy score')
+# print(accuracy_score(pred, labels_test))
 
-print('Check accuracy score')
-print(accuracy_score(pred, labels_test))
-
-
-
+print(pred)
+i=0
+for p in pred:
+    if p == 1:
+        i=i+1
+print('===')
+print(i)
 #########################################################
 
 
