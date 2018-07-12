@@ -17,6 +17,17 @@
 
 import pickle
 
-enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
+enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "rb"))
+
+
+
+i = 0
+
+if int(item['poi']) == 1:
+    i=i+1
+for person, item in enron_data.items():
+   pass
+#
+print(i)
 
 

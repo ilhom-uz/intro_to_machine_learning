@@ -29,7 +29,7 @@ features_train, features_test, labels_train, labels_test = preprocess()
 start = time()
 print('Start training the Decision Tree Classifier...')
 
-adb = AdaBoostClassifier(n_estimators=100)
+adb = AdaBoostClassifier(n_estimators=500)
 
 
 adb.fit(features_train, labels_train)
